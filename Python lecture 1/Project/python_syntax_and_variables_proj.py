@@ -53,4 +53,4 @@ you will investigate how different factors such as age, sex, BMI, etc. affect th
 
 
 
-# Evaluate insurance soct with regards to gender and display result
+# Evaluate insurance cost with regards to gender and display result
