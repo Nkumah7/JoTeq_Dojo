@@ -73,3 +73,82 @@ and decided to upgrade. Upgrade your Honda Civic 2016 model to 2021.
 
 joseph_cars[-1] = ["Nissan", 2022]
 joseph_cars[1][1] = 2021
+
+
+# Chapter 2
+# Python List Methods
+
+# 1. insert() method
+mixed_list = ["Jo", 7, "Joseph Okoli", 9, True, [3,5,6]]
+# print(mixed_list)
+mixed_list.insert(3, "Nkumah")
+mixed_list.insert(5, 75.3)
+# print(mixed_list)
+
+# 2. pop() method
+removed_element = mixed_list.pop()
+# print(removed_element)
+# print(mixed_list)
+
+removed_index = mixed_list.pop(3)
+# print(removed_index)
+# print(mixed_list)
+
+# Consecutive Lists: Range
+numbers = range(10)
+# x = list(numbers)
+# print(list(numbers))
+
+# 3. The power of range 
+# two inputs
+# range_list = range(start, end) - the end is (end-1)
+num = range(2, 101)
+# print(list(num))
+
+# three inputs
+# range_list = range(start, end, increment)
+num2 = range(2, 101, 10)
+# print(list(num2))
+
+num3 = range(100, 1, -2)
+# print(list(num3))
+
+# Length of a list
+new_list = range(10, 1001, 5) 
+new_version = list(new_list)
+# print(len(new_version))
+
+# 4. Slicing Lists
+# Positive slicing
+names = ["Jo", "Okenna", "Joseph", "Cristiano", "Lionel", "Neymar", "Mbappe", "Kane"]
+# names[start:end] - end-1
+footballer_names = names[3:7]
+# print(footballer_names)
+
+non_footballer_names = names[:3] # [beginning:3]
+footballer_names = names[3:] # [3:end]
+# print(non_footballer_names)
+
+# Negative slicing
+neg_footballer_names = names[-5:-1] #[-4:end]
+neg_non_footballer_names = names[-6:]
+# print(neg_footballer_names)
+# print(neg_non_footballer_names)
+
+# Counting in a List
+num = [5, 8, 9, 4, 9, 7, 10, 7, 9]
+freq_num_of_9 = num.count(9)
+# print(freq_num_of_9)
+
+# 5. Sorting Lists
+names.sort()
+num.sort()
+# print(names)
+# print(num)
+
+names.sort(reverse=True)
+# print(names)
+
+sorted_footballer_names = sorted(footballer_names)
+print(footballer_names)
+print(sorted_footballer_names)
